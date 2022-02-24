@@ -1,0 +1,26 @@
+
+  .home-container {
+    height: 100vh;
+    width: 100%;
+    top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+   font-family: 'Poppins', sans-serif;
+  }
+
+  .home-container h1 {
+  font-family: 'Poppins', sans-serif;
+  color: beige;
+  font-size: 3em;
+  }
+  
+  .home-container h2 {
+    font-family: 'Poppins', sans-serif;
+    color:turquoise;
+    font-size: 2em;
+    }

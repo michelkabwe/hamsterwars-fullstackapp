@@ -1,0 +1,61 @@
+.random {
+    margin: 2% 12em 8%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+   margin-bottom: auto;
+}
+.random h1 {
+   font-family: "Great Vibes", cursive;
+   color: #F8EEE7;
+   font-size: 5em;
+}
+.random-image {
+   width: 90%;
+   height: 30vh;
+   border-color: #F4DECB;
+   border-width: 20px;
+   border-radius: 25px;
+    /*border-style: ridge;
+   outline: 5px solid #212121;*/
+   margin-top: 10px;
+}
+
+span {
+   font-family: 'Bebas Neue';
+   color: #000000;
+   font-weight: 800;
+   font-size: 1.5em;
+}
+p{
+   margin-bottom: 0em;
+   font-size: 1em;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+}
+Link {
+   text-decoration: none;
+}
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   overflow: hidden;
+}
+.vote {
+   color: #000000;
+   font-weight: 700;
+   font-size: 1.4em;
+   margin: auto;
+   padding-top: 12px;
+}
+.buttonwrapper {
+   font-family: 'Poppins', sans-serif;
+   font-size: 2em;
+   width: 12em;
+   margin: auto;
+}
+
+.buttonwrapper p {
+   text-align: center;
+}

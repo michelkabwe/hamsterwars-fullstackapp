@@ -1,0 +1,15 @@
+.add-todo-wrapper {
+   
+    padding: 1em;
+    margin: 0.3em;
+    border: solid 1px hotpink;
+    text-align: left;
+  
+
+}
+
+.added-hamster {
+    display: grid;
+    grid-template-areas: "hamster-card hamster-card hamster-card  hamster-card  hamster-card hamster-card ";
+
+}
