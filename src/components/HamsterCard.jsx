@@ -9,8 +9,7 @@ const HamsterCard = ({hamsterItems}) => {
     useEffect(() => {
         async function get(){
         const response = await fetch('/hamsters', {method: 'GET',})
-        //fetchar och tar emot data i reponsens
-        const data = await response.json() //Data
+        const data = await response.json() 
         setHamsters(data)
         console.log(data)
      
@@ -21,7 +20,7 @@ const HamsterCard = ({hamsterItems}) => {
   
 
     return (
-      //pass the id inside of the delete function to which id to delete
+      //Skicka in id i delete funktionen
         <div className="container"> 
            <div className="hamster-card">
             {hamsters.map((hamster) => (

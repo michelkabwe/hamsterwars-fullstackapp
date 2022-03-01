@@ -4,9 +4,6 @@ const router = express.Router();
 const getDatabase = require('../database.js');
 const db = getDatabase();
 
-// ** REST API **
-
-// GET all matches
 router.get('/', async (req, res) => {
 	let allTheMatches = [];
 try {
@@ -20,7 +17,7 @@ try {
 
 	snapshot.forEach(doc => {
 		const data = doc.data();
-		data.id = doc.id;  // id behövs för POST+PUT+DELETE
+		data.id = doc.id;
 		allTheMatches.push(data);
 	});
 	res.send(allTheMatches);
@@ -31,7 +28,6 @@ catch(error) {
 }
 });
 
-// GET /matches by id
 router.get('/:id', async (req, res) => {
 	const id = req.params.id;
 	try {
@@ -50,7 +46,6 @@ catch(error){
 }
 });
 
-// POST /matches
 router.post('/', async (req, res) => {
 	const object = req.body;
 	try {
@@ -64,12 +59,10 @@ router.post('/', async (req, res) => {
 			return;
 		}
 
-		// incrementing wins and games in hamster object
 		const winnerHamsterData = winnerHamsterRef.data();
 		winnerHamsterData.wins += 1;
 		winnerHamsterData.games += 1;
 
-		//incrementing defeats and games in hamster object
 		const loserHamsterData = loserHamsterRef.data();
 		loserHamsterData.defeats += 1;
 		loserHamsterData.games += 1;
@@ -95,7 +88,6 @@ router.post('/', async (req, res) => {
 	}
 });
 
-// DELETE matches by id
 router.delete('/:id', async (req, res) => {
 	const id = req.params.id;
 
