@@ -13,3 +13,33 @@
     grid-template-areas: "hamster-card hamster-card hamster-card  hamster-card  hamster-card hamster-card ";
 
 }
+
+:root {
+    --error-color: red;
+    --valid-color: green;
+}
+
+.message {
+    color: var(--error-color);
+    position: absolute;
+}
+
+.error {
+    border-color: var(--error-color);
+}
+
+.valid {
+    border-color: var(--valid-color);
+}
+
+.form-box {
+    padding: 2rem;
+
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+   
+  
+}
